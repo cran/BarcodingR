@@ -11,7 +11,7 @@ barcodes.eval(barcode1, barcode2, kmer1 = kmer1, kmer2 = kmer2)
 
 \item{barcode2}{object of class "DNAbin" based on barcode2, which contains taxon information.}
 
-\item{kmer1}{a numeric to indicate the length of kmer1 for barcode1, the opitimal kmer could be found by the function
+\item{kmer1}{a numeric to indicate the length of kmer1 for barcode1, the optimal kmer could be found by the function
 optimize.kmer() before running this function.}
 
 \item{kmer2}{a numeric to indicate the length of kmer2 for barcode2, see above.}
@@ -20,7 +20,7 @@ optimize.kmer() before running this function.}
 a list containing p_value of prop.test(), and so on.
 }
 \description{
-Evaluate two barcodes using species identification success rate critera.
+Evaluate two barcodes using species identification success rate criteria.
 }
 \examples{
 
@@ -34,7 +34,7 @@ b.eval
 Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
 }
 \references{
-zhangab2008(at)mail.cnu.edu.cn
+zhangab2008 (at) mail. cnu. edu. cn.
 }
 \seealso{
 prop.test()

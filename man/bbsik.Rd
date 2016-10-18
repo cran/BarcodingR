@@ -50,7 +50,7 @@ out$success.rates.ref
 
 }
 \author{
-Ai-bing ZHANG, Meng-di HAO, Cai-qing YANG, CNU, Beijing, CHINA. zhangab2008(at)mail.cnu.edu.cn
+Ai-bing ZHANG, Meng-di HAO, Cai-qing YANG, CNU, Beijing, CHINA. zhangab2008 (at) mail. cnu. edu.cn
 }
 \references{
 Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership 

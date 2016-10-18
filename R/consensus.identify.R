@@ -4,7 +4,7 @@
 #' a set of query sequences.
 #' @param   identifiedBy2orMore an object of class "data.frame", containing (queIDs, as rownames), identifiedByMethod1,identifiedByMethod2,and so on. 
 
-#' @return a data frame with concensus.identification, and corresponding votes.
+#' @return a data frame with consensus.identification, and corresponding votes.
 #' @keywords consensus.identify
 #' @export 
 #' @author Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn

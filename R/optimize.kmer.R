@@ -1,7 +1,7 @@
 #' Optimize kmer Length
 #' 
 #' @description Optimize kmer length by trying kmers which length is in the range from 1 to max.kmer. 
-#' The optimal kmer will have maximumal species identification success rate.
+#' The optimal kmer will have maximal species identification success rate.
 #' @param  ref object of class "DNAbin" used as a reference dataset, which contains taxon information.
 #' @param  max.kmer a numeric to indicate the length of maximal kmer.
 #' 
@@ -9,7 +9,7 @@
 #' @keywords optimize.kmer
 #' @export 
 #' @author Ai-bing ZHANG, Cai-qing YANG, Meng-di HAO, CNU, Beijing, CHINA.
-#' @references zhangab2008(at)mail.cnu.edu.cn/zhangab2008(at)gmail.com.
+#' @references zhangab2008 (at) mail. cnu. edu. cn/zhangab2008 (at) gmail.com.
 #' @examples
 #' 
 #' data(TibetanMoth) 

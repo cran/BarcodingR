@@ -6,7 +6,7 @@
 #' @param  ref object of class "DNAbin" used as a reference dataset, which contains taxon information.
 #' @param  que object of class "DNAbin", whose identities (species names) need to be inferred.
 #' @param  method a character string indicating which method will be used to train model and/or infer species
-#' membership. One of these methods ("fuzzyId", "bpNewTraining","bpNewTrainingOnly","bpUseTrained","Bayesian") 
+#' membership. One of these methods ("fuzzyId", "bpNewTraining", "bpNewTrainingOnly", "bpUseTrained","Bayesian") 
 #' should be specified.
 #' @return a list containing model parameters used, species identification success rates using references,
 #' query sequences, species inferred, and corresponding confidence levels (bp probability for BP-based method
@@ -28,7 +28,10 @@
 #' for an exec version of the package. For very large DNA dataset, read.fas() package:phyloch is strongly suggested instead of
 #' fasta2DNAbin() since the latter is very slow.
 #' @references 
-#' Q. Jin, H.L. Han, X.M. Hu, X.H. Li,C.D. Zhu,S. Y. W. Ho, R. D. Ward, A.B. Zhang . (2013).Quantifying Species Diversity with a DNA Barcoding-Based Method: Tibetan Moth Species (Noctuidae) on the Qinghai-Tibetan Plateau. PloS One 8: e644.
+#' 
+#' Zhang, A.B, Hao, M.D., Yang,C.Q., Shi, Z.Y. (2016). BarcodingR: an integrated R package for species identification using DNA barcodes. Methods in Ecology and Evolution. In press.
+#' 
+#' Jin,Q., H.L. Han, X.M. Hu, X.H. Li,C.D. Zhu,S. Y. W. Ho, R. D. Ward, A.B. Zhang . (2013). Quantifying Species Diversity with a DNA Barcoding-Based Method: Tibetan Moth Species (Noctuidae) on the Qinghai-Tibetan Plateau. PloS One 8: e644.
 #' 
 #' Zhang, A. B., C. Muster, H.B. Liang, C.D. Zhu, R. Crozier, P. Wan, J. Feng, R. D. Ward.(2012). A fuzzy-set-theory-based approach to analyse species membership in DNA barcoding. Molecular Ecology, 21(8):1848-63.
 #' 

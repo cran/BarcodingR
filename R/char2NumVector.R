@@ -6,9 +6,9 @@
 #' @return an integer vector.
 #' @keywords char2NumVector
 #' @export 
-#' @author Ai-bing ZHANG, PhD. CNU, Beijing, CHINA. zhangab2008(at)mail.cnu.edu.cn
+#' @author Ai-bing ZHANG, PhD. CNU, Beijing, CHINA. zhangab2008 (at) mail. cnu. edu.cn.
 #' @references 
-#' zhangab2008(at)mail.cnu.edu.cn
+#' zhangab2008 (at) mail. cnu. edu. cn.
 #' 
 #' @examples
 #' c<-c("a","a","b")

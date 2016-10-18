@@ -16,7 +16,7 @@
 #' @export 
 #' @import nnet
 
-#' @author Ai-bing ZHANG, Meng-di HAO, Cai-qing YANG, CNU, Beijing, CHINA. zhangab2008(at)mail.cnu.edu.cn
+#' @author Ai-bing ZHANG, Meng-di HAO, Cai-qing YANG, CNU, Beijing, CHINA. zhangab2008 (at) mail. cnu. edu.cn
 #' @references 
 #' Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership 
 #' using DNA sequences with Back-propagation Neural Networks. Systematic Biology, 57(2):202-215. 
@@ -46,7 +46,7 @@ bbsik<-function (ref, que, kmer = kmer, UseBuiltModel = FALSE,lr=5e-5, maxit=1e+
   
   ### functions used!
   DNAbin2kmerFreqMatrix2<-function(ref,que,kmer=kmer){ 
-    ### return kmer frequency matricies for both ref and que sequences, but only based on kmers found in ref!!!
+    ### return kmer frequency matrices for both ref and que sequences, but only based on kmers found in ref!!!
     ### new kmers in que will be ignored
     #require(seqinr)
     

@@ -1,10 +1,10 @@
 #' Barcodes Evaluation
 #' 
-#' @description Evaluate two barcodes using species identification success rate critera.
+#' @description Evaluate two barcodes using species identification success rate criteria.
 #' 
 #' @param  barcode1 object of class "DNAbin" based on barcode1, which contains taxon information.
 #' @param  barcode2 object of class "DNAbin" based on barcode2, which contains taxon information.
-#' @param  kmer1 a numeric to indicate the length of kmer1 for barcode1, the opitimal kmer could be found by the function
+#' @param  kmer1 a numeric to indicate the length of kmer1 for barcode1, the optimal kmer could be found by the function
 #' optimize.kmer() before running this function.
 #' @param  kmer2 a numeric to indicate the length of kmer2 for barcode2, see above.
 #' 
@@ -15,7 +15,7 @@
 #' @import class
 #' 
 #' @author Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
-#' @references zhangab2008(at)mail.cnu.edu.cn
+#' @references zhangab2008 (at) mail. cnu. edu. cn.
 #' @seealso prop.test()
 #' @examples
 #' 

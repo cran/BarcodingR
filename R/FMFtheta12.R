@@ -14,7 +14,7 @@
 #' @import utils 
 #' @import sp
 #' 
-#' @author Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
+#' @author Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008 (at) mail.cnu.edu.cn.
 #' @references 
 #' Zhang, A. B., C. Muster, H.B. Liang, C.D. Zhu, R. Crozier, P. Wan, J. Feng, R. D. Ward.(2012). A fuzzy-set-theory-based approach 
 #' to analyse species membership in DNA barcoding. Molecular Ecology, 21(8):1848-63.

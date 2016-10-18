@@ -16,7 +16,7 @@ a numeric indicating the optimal kmer in the range examined.
 }
 \description{
 Optimize kmer length by trying kmers which length is in the range from 1 to max.kmer. 
-The optimal kmer will have maximumal species identification success rate.
+The optimal kmer will have maximal species identification success rate.
 }
 \examples{
 
@@ -31,7 +31,7 @@ optimial.kmer<-optimize.kmer(ref,max.kmer=5)
 Ai-bing ZHANG, Cai-qing YANG, Meng-di HAO, CNU, Beijing, CHINA.
 }
 \references{
-zhangab2008(at)mail.cnu.edu.cn/zhangab2008(at)gmail.com.
+zhangab2008 (at) mail. cnu. edu. cn/zhangab2008 (at) gmail.com.
 }
 \keyword{optimize.kmer}
 

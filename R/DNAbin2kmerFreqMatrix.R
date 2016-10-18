@@ -1,11 +1,11 @@
 #' Calculation of Kmer Frequency Matrix from DNAbin for Both Reference and Query Sequences
 #' 
-#' @description Calculation of kmer frequency matricies from DNAbin for both reference and query sequences.
+#' @description Calculation of kmer frequency matrices from DNAbin for both reference and query sequences.
 #' 
 #' @param  ref Object of class "DNAbin" used as a reference dataset, which contains taxon information.
-#' @param  que Object of class "DNAbin", whichs need to be inferred.
+#' @param  que Object of class "DNAbin", which needs to be inferred.
 #' @param  kmer a numeric to indicate the length of kmer used.
-#' @return kmer frequency matricies for both ref and que sequences, but only based on kmers found in ref!!!
+#' @return kmer frequency matrices for both ref and que sequences, but only based on kmers found in ref!!!
 #' new kmers in que will be ignored.
 #' @keywords DNAbin2kmerFreqMatrix
 #' @export 
@@ -28,7 +28,7 @@
 #' 
 
 DNAbin2kmerFreqMatrix<-function(ref,que,kmer=kmer){ 
-  ### return kmer frequency matricies for both ref and que sequences, but only based on kmers found in ref!!!
+  ### return kmer frequency matrices for both ref and que sequences, but only based on kmers found in ref!!!
   ### new kmers in que will be ignored
   #require(seqinr)
   

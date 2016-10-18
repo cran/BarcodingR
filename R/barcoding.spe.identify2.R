@@ -11,11 +11,14 @@
 #' @export 
 #' @import class
 #' @import sp
-#' @author Ai-bing ZHANG, Cai-qing YANG, Meng-di HAO, CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
+#' @author Ai-bing ZHANG, Cai-qing YANG, Meng-di HAO, CNU, Beijing, CHINA, contact at zhangab2008 (at) mail. cnu. edu. cn.
 #' @note read.dna() from package {ape} was used to obtain DNAbin object for unaligned non-coding barcodes. 
 #'   
 #' @references 
-#' Q. Jin, H.L. Han, X.M. Hu, X.H. Li,C.D. Zhu,S. Y. W. Ho, R. D. Ward, A.B. Zhang . (2013).Quantifying Species Diversity with a DNA Barcoding-Based Method: Tibetan Moth Species (Noctuidae) on the Qinghai-Tibetan Plateau. PloS One 8: e644.
+#' 
+#' Zhang, A.B, Hao, M.D., Yang,C.Q., Shi, Z.Y. (2016). BarcodingR: an integrated R package for species identification using DNA barcodes. Methods in Ecology and Evolution. In press.
+#' 
+#' Jin,Q., H.L. Han, X.M. Hu, X.H. Li,C.D. Zhu,S. Y. W. Ho, R. D. Ward, A.B. Zhang . (2013).Quantifying Species Diversity with a DNA Barcoding-Based Method: Tibetan Moth Species (Noctuidae) on the Qinghai-Tibetan Plateau. PloS One 8: e644.
 #' 
 #' Zhang, A. B., C. Muster, H.B. Liang, C.D. Zhu, R. Crozier, P. Wan, J. Feng, R. D. Ward.(2012). A fuzzy-set-theory-based approach to analyse species membership in DNA barcoding. Molecular Ecology, 21(8):1848-63.
 #' 
@@ -69,7 +72,7 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
   ### functions used!
   #################################################
     DNAbin2kmerFreqMatrix2<-function(ref,que,kmer=kmer){ 
-      ### return kmer frequency matricies for both ref and que sequences, but only based on kmers found in ref!!!
+      ### return kmer frequency matrices for both ref and que sequences, but only based on kmers found in ref!!!
       ### new kmers in que will be ignored
       #require(seqinr)
       

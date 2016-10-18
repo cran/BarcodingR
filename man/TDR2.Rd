@@ -7,9 +7,9 @@
 TDR2(oneSpe, que, boot, boot2)
 }
 \arguments{
-\item{oneSpe}{object of class "DNAbin" which contains DNA squences from one speices}
+\item{oneSpe}{object of class "DNAbin" which contains DNA sequences from one species}
 
-\item{que}{object of class "DNAbin" which contains DNA squences different samples}
+\item{que}{object of class "DNAbin" which contains DNA sequences different samples}
 
 \item{boot}{a numeric value indicating times of resampling along sequence columns}
 
@@ -43,7 +43,7 @@ Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.
 \references{
 Jin Q, L,J.He, A.B. Zhang* (2012). A Simple 2D Non-Parametric Resampling Statistical Approach to 
 Assess Confidence in Species Identification in DNA Barcoding-An Alternative to Likelihood and Bayesian Approaches.
-PLoS ONE 7(12): e50831. doi:10.1371/journal.pone.0050831.http://dx.plos.org/10.1371/journal.pone.0050831.
+PLoS ONE 7(12): e50831. doi:10.1371/ journal. pone. 0050831. http://dx.plos.org/ 10.1371/ journal. pone. 0050831.
 }
 \keyword{TDR2}
 

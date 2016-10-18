@@ -9,16 +9,16 @@ DNAbin2kmerFreqMatrix(ref, que, kmer = kmer)
 \arguments{
 \item{ref}{Object of class "DNAbin" used as a reference dataset, which contains taxon information.}
 
-\item{que}{Object of class "DNAbin", whichs need to be inferred.}
+\item{que}{Object of class "DNAbin", which needs to be inferred.}
 
 \item{kmer}{a numeric to indicate the length of kmer used.}
 }
 \value{
-kmer frequency matricies for both ref and que sequences, but only based on kmers found in ref!!!
+kmer frequency matrices for both ref and que sequences, but only based on kmers found in ref!!!
 new kmers in que will be ignored.
 }
 \description{
-Calculation of kmer frequency matricies from DNAbin for both reference and query sequences.
+Calculation of kmer frequency matrices from DNAbin for both reference and query sequences.
 }
 \examples{
 data(TibetanMoth) 

@@ -3,8 +3,8 @@
 #' @description To calculate TDR value for a set of queries and one potential species. Its value is in the range of [0,1],
 #' 0 indicates extremly weak species membership, values close 1 indicating strong species membership.
 #' 
-#' @param  oneSpe object of class "DNAbin" which contains DNA squences from one speices
-#' @param  que object of class "DNAbin" which contains DNA squences different samples
+#' @param  oneSpe object of class "DNAbin" which contains DNA sequences from one species
+#' @param  que object of class "DNAbin" which contains DNA sequences different samples
 #' @param  boot a numeric value indicating times of resampling along sequence columns
 #' @param  boot2 a numeric value indicating times of resampling along sequence rows (different samples)
 #' @return a numeric vector represents TDR values for each query against the species
@@ -13,7 +13,7 @@
 #' @author Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
 #' @references Jin Q, L,J.He, A.B. Zhang* (2012). A Simple 2D Non-Parametric Resampling Statistical Approach to 
 #' Assess Confidence in Species Identification in DNA Barcoding-An Alternative to Likelihood and Bayesian Approaches.
-#' PLoS ONE 7(12): e50831. doi:10.1371/journal.pone.0050831.http://dx.plos.org/10.1371/journal.pone.0050831.
+#' PLoS ONE 7(12): e50831. doi:10.1371/ journal. pone. 0050831. http://dx.plos.org/ 10.1371/ journal. pone. 0050831.
 #' @note oneSpe and que should be the same in sequence length, i.e., they should be aligned in prior.
 #' It's strongly recommended that oneSpe should have large enough sample size,e.g., 20.
 #'  

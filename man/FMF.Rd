@@ -8,7 +8,7 @@ FMF(xtheta12)
 }
 \arguments{
 \item{xtheta12}{a numerical vector containing three elements, a distance from query to a potenial species,
-maximual or sd of intraspecific variation of the potential species theta1,minimal or mean interspecific
+maximal or sd of intraspecific variation of the potential species theta1,minimal or mean interspecific
 distance.}
 }
 \value{
@@ -16,7 +16,7 @@ a numeric between 0 and 1.
 }
 \description{
 Calculation fuzzy membership function value given a distance from query to a potenial
-species, maximual intraspecific variation of the potential species theta1, and minimal interspecific
+species, maximal intraspecific variation of the potential species theta1, and minimal interspecific
 distance (here, the distance between the potential species and its nearest neighbor theta2) 
 (fuzzy-set based method, Zhang et al. 2012), different definition of distances could also be used.
 }
