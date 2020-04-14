@@ -27,11 +27,10 @@ optimial.kmer<-optimize.kmer(ref,max.kmer=5)
 
 
 }
-\author{
-Ai-bing ZHANG, Cai-qing YANG, Meng-di HAO, CNU, Beijing, CHINA.
-}
 \references{
 zhangab2008 (at) mail. cnu. edu. cn/zhangab2008 (at) gmail.com.
 }
+\author{
+Ai-bing ZHANG, Cai-qing YANG, Meng-di HAO, CNU, Beijing, CHINA.
+}
 \keyword{optimize.kmer}
-

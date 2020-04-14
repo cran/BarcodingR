@@ -34,11 +34,10 @@ deli2<-c(1,1,2,1,1,3)
 out<-compare2delimitations(deli1,deli2)
 out
 }
-\author{
-Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
-}
 \references{
 L. Hubert and P. Arabie (1985) Comparing Partitions, Journal of the Classification 2:193-218.
 }
+\author{
+Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
+}
 \keyword{compare2delimitations}
-

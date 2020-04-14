@@ -35,4 +35,3 @@ ccs<-consensus.identify(identifiedBy2orMore)
 Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
 }
 \keyword{consensus.identify}
-

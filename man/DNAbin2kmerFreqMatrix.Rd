@@ -29,11 +29,10 @@ out
 
 
 }
-\author{
-Ai-bing ZHANG, PhD. CNU, Beijing, CHINA. zhangab2008(at)mail.cnu.edu.cn
-}
 \references{
 zhangab2008(at)mail.cnu.edu.cn
 }
+\author{
+Ai-bing ZHANG, PhD. CNU, Beijing, CHINA. zhangab2008(at)mail.cnu.edu.cn
+}
 \keyword{DNAbin2kmerFreqMatrix}
-

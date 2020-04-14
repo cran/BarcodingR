@@ -4,8 +4,7 @@
 \alias{bbsik}
 \title{Bp Barcoding Species Identify using Kmer}
 \usage{
-bbsik(ref, que, kmer = kmer, UseBuiltModel = FALSE, lr = 5e-05,
-  maxit = 1e+06)
+bbsik(ref, que, kmer = kmer, UseBuiltModel = FALSE, lr = 5e-05, maxit = 1e+06)
 }
 \arguments{
 \item{ref}{object of class "DNAbin" used as a reference dataset, which contains taxon information.}
@@ -49,12 +48,12 @@ out$success.rates.ref
 
 
 }
+\references{
+Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership 
+using DNA sequences with Back-propagation Neural Networks. Systematic Biology, 57(2):202-215. 
+https://academic.oup.com/sysbio/article/57/2/202/1622290
+}
 \author{
 Ai-bing ZHANG, Meng-di HAO, Cai-qing YANG, CNU, Beijing, CHINA. zhangab2008 (at) mail. cnu. edu.cn
 }
-\references{
-Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership 
-using DNA sequences with Back-propagation Neural Networks. Systematic Biology, 57(2):202-215.
-}
 \keyword{bbsik}
-

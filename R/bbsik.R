@@ -20,6 +20,7 @@
 #' @references 
 #' Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership 
 #' using DNA sequences with Back-propagation Neural Networks. Systematic Biology, 57(2):202-215. 
+#' https://academic.oup.com/sysbio/article/57/2/202/1622290
 #' 
 #' 
 #' @examples
@@ -311,7 +312,7 @@ bbsik<-function (ref, que, kmer = kmer, UseBuiltModel = FALSE,lr=5e-5, maxit=1e+
       
       #p.ref[1]<-"abz"
       
-      spe.morph.Identified<-data.frame(Spp,p.ref)
+      spe.morph.Identified<-data.frame(Spp,p.ref,stringsAsFactors=TRUE)
       
       matches<-apply(spe.morph.Identified,2,strings.equal,str2=spe.morph.Identified[,2])
       
@@ -328,7 +329,7 @@ bbsik<-function (ref, que, kmer = kmer, UseBuiltModel = FALSE,lr=5e-5, maxit=1e+
       
       output.identified<-data.frame(queIDs=queIDs,
                                     spe.Identified=colnames(spe.inferred)[inferred],
-                                    bp.prob=inferred.prob)
+                                    bp.prob=inferred.prob,stringsAsFactors=TRUE)
       #output.identified
       
       rownames(output.identified)<-NULL
@@ -367,9 +368,21 @@ bbsik<-function (ref, que, kmer = kmer, UseBuiltModel = FALSE,lr=5e-5, maxit=1e+
              maxit=1e+6)
     
     
-    fileName<-"bbsik_tmp"
+    #fileName<-"bbsik_tmp"
     #fileName<-paste("simulation",i,sep = "")
+    #fileName<-paste(fileName,".RData",sep = "")
+    
+    #Rhome<-R.home() ### 2020/4/13 21:50:29
+    Rhome<-tempdir() ### 2020/4/14 21:31:02
+    fileName<-"bbsik_tmp"
+    fileName<-paste(Rhome,fileName,sep = "/")### 2020/4/13 21:50:34
+    fileName
     fileName<-paste(fileName,".RData",sep = "")
+    fileName
+    
+    
+    
+    
     save(output2.identified,
       #nnet.trained,
       #   out.bp,
@@ -383,13 +396,34 @@ bbsik<-function (ref, que, kmer = kmer, UseBuiltModel = FALSE,lr=5e-5, maxit=1e+
    
   }else{
     
-    if(!file.exists("bbsik_tmp.RData"))
-    stop("file bbsik_tmp.RData not found in current directory!
-         you need to move the file into current directory or rebuild the model!
+    ##################### ### 2020/4/13 21:57:42
+    #Rhome<-R.home() ### 2020/4/13 21:57:47
+    Rhome<-tempdir() ### 2020/4/14 21:31:02
+    fileName<-"bbsik_tmp"
+    fileName<-paste(Rhome,fileName,sep = "/")### 2020/4/13 21:06:46
+    
+    fileName
+    fileName<-paste(fileName,".RData",sep = "")
+    fileName
+    ############################ 2020/4/13 21:57:50
+    
+    
+    #if(!file.exists("bbsik_tmp.RData"))
+      if(!file.exists(fileName)) ### 2020/4/13 21:52:14
+      
+    stop("file bbsik_tmp.RData not found in R.home directory!
+         you need to rebuild the model!
          ")
     
     ### 4.  calculate kmer frequency for each sequence in que 
-    load("bbsik_tmp.RData")
+    
+    
+    
+    
+    #load("bbsik_tmp.RData")
+    load(fileName) ####2020/4/13 21:58:54
+    
+    
     center.ref1<-output2.identified$center.ref1
     nnet.trained<-output2.identified$nnet.trained
     success.rates.ref<-output2.identified$success.rates.ref
@@ -431,7 +465,7 @@ bbsik<-function (ref, que, kmer = kmer, UseBuiltModel = FALSE,lr=5e-5, maxit=1e+
       inferred.prob<-apply(spe.inferred,1,FUN=max)
       output.identified<-data.frame(queIDs=queIDs,
                                   spe.Identified=colnames(spe.inferred)[inferred],
-                                  bp.prob=inferred.prob) 
+                                  bp.prob=inferred.prob,stringsAsFactors=TRUE) 
     rownames(output.identified)<-NULL
     
     output2.identified<-list(summary.model=summary(nnet.trained),

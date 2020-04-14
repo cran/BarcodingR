@@ -12,7 +12,7 @@ barcoding.gap(ref, dist = dist)
 \item{dist}{a character string which takes one of ("raw","K80","euclidean").}
 }
 \value{
-a list indicates the summary statistics of interspecific and intraspecific genetic distance, 
+a list indicates the summary statistics of interspecific and intraspecific genetic distance,
 such as k2P distance.
 }
 \description{
@@ -21,7 +21,7 @@ also be used for calculation DNA barcoding gap.
 }
 \note{
 the current version of the function can only be used for protein-coding barcodes,
-such as, COI. The futuren version may incorporate calculation for non-coding barcodes,for 
+such as, COI. The futuren version may incorporate calculation for non-coding barcodes,for
 instance, ITS1, ITS2.
 }
 \examples{
@@ -31,17 +31,16 @@ TibetanMoth<-as.DNAbin(as.character(TibetanMoth[1:20,]))
 b.gap<-barcoding.gap(ref=TibetanMoth,dist="K80")
 b.gap
 }
+\references{
+Meyer, Christopher P., and Gustav Paulay. (2005). ''DNA barcoding: error rates based on
+comprehensive sampling.''.PLoS biology 3.12: e422.
+
+F.Jiang, Q. Jin, L. Liang, A.B. Zhang,and Z.H. Li.(2014). Existence of Species
+Complex Largely Reduced Barcoding Success for Invasive Species of Tephritidae: A Case Study in
+Bactrocera spp. Mol Ecol Resour. 14(6):1114-1128 DOI: 10.1111/1755-0998.12259.
+}
 \author{
 Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
 }
-\references{
-Meyer, Christopher P., and Gustav Paulay. (2005). ''DNA barcoding: error rates based on 
-comprehensive sampling.''.PLoS biology 3.12: e422.
-
-F. Jiang, Q. Jin, L. Liang, A.B. Zhang,and Z.H. Li.(2014). Existence of Species 
-Complex Largely Reduced Barcoding Success for Invasive Species of Tephritidae: A Case Study in 
-Bactrocera spp. Mol Ecol Resour. 14(6):1114-1128 DOI: 10.1111/1755-0998.12259.
-}
 \keyword{barcoding}
 \keyword{gap}
-

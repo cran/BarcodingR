@@ -175,7 +175,7 @@ FMFtheta12<-function(ref){
   ###################
   #codes<-out.somu$out.som.unique$codes  ### seqsRef$codes
   codes<-centroid.spe.matrix
-   theta12.all<-data.frame(list.spe=list.spe,PS=pairs[,1],NN=pairs[,2])
+   theta12.all<-data.frame(list.spe=list.spe,PS=pairs[,1],NN=pairs[,2],stringsAsFactors=TRUE)
   #source("eucl.dist.two.vect.R")
   theta2.tmp<-numeric(dim(pairs)[1])
   

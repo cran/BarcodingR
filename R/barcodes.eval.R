@@ -26,10 +26,7 @@
 #' b.eval<-barcodes.eval(barcode1,barcode2,kmer1=1,kmer2=3)
 #' b.eval
 
-#b.eval<-barcodes.eval(pineMothITS2,pineMothITS1,kmer1=3,kmer2=3)
-#b.eval
 
-#library(help=class)
 
 barcodes.eval<-function (barcode1,barcode2,kmer1=kmer1,kmer2=kmer2){
   set.seed(7)

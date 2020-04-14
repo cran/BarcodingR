@@ -11,14 +11,13 @@ barcoding.spe.identify(ref, que, method = "bpNewTraining")
 
 \item{que}{object of class "DNAbin", whose identities (species names) need to be inferred.}
 
-\item{method}{a character string indicating which method will be used to train model and/or infer species
-membership. One of these methods ("fuzzyId", "bpNewTraining", "bpNewTrainingOnly", "bpUseTrained","Bayesian") 
-should be specified.}
+\item{method}{a character string indicating which method will be used to train model and/or infer species membership. 
+One of these methods ("fuzzyId", "bpNewTraining", "bpNewTrainingOnly", "bpUseTrained","Bayesian") should be specified.}
 }
 \value{
 a list containing model parameters used, species identification success rates using references,
-query sequences, species inferred, and corresponding confidence levels (bp probability for BP-based method
-/ FMF values for fuzzy set theory based method) when available.
+        query sequences, species inferred, and corresponding confidence levels 
+        (bp probability for BP-based method / FMF values for fuzzy set theory based method / posterior probability for Bayesian method) when available.
 }
 \description{
 Species identification using protein-coding barcodes with different methods,including BP-based method
@@ -26,15 +25,14 @@ Species identification using protein-coding barcodes with different methods,incl
 }
 \note{
 functions fasta2DNAbin() from package:adegenet and read.dna() from package:ape were used to obtain DNAbin object in our package.
-The former is used to read large aligned coding DNA barcodes, the latter unaligned ones. ref and que 
-should be aligned with identical sequence length. We provided a pipeline to perform fast 
+The former is used to read large aligned coding DNA barcodes, the latter unaligned ones. ref and que
+should be aligned with identical sequence length. We provided a pipeline to perform fast
 sequences alignment for reference and query sequences. Windows users could contact zhangab2008(at)mail.cnu.edu.cn
 for an exec version of the package. For very large DNA dataset, read.fas() package:phyloch is strongly suggested instead of
 fasta2DNAbin() since the latter is very slow.
 }
 \examples{
-
-data(TibetanMoth) 
+data(TibetanMoth)
 ref<-as.DNAbin(as.character(TibetanMoth[1:5,]))
 que<-as.DNAbin(as.character(TibetanMoth[50:55,]))
 bsi<-barcoding.spe.identify(ref, que, method = "fuzzyId")
@@ -44,17 +42,21 @@ bsi
 bsi<-barcoding.spe.identify(ref, que, method = "Bayesian")
 bsi
 }
-\author{
-Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
-}
 \references{
-Zhang, A.B, Hao, M.D., Yang,C.Q., Shi, Z.Y. (2016). BarcodingR: an integrated R package for species identification using DNA barcodes. Methods in Ecology and Evolution. In press.
+Zhang, A. B., M. D. Hao, C. Q. Yang, and Z. Y. Shi. (2017). BarcodingR: an integrated R package for species identification using DNA barcodes. Methods Ecol Evol. 8(5):627-634.
+https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12682.
 
 Jin,Q., H.L. Han, X.M. Hu, X.H. Li,C.D. Zhu,S. Y. W. Ho, R. D. Ward, A.B. Zhang . (2013). Quantifying Species Diversity with a DNA Barcoding-Based Method: Tibetan Moth Species (Noctuidae) on the Qinghai-Tibetan Plateau. PloS One 8: e644.
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064428.
 
 Zhang, A. B., C. Muster, H.B. Liang, C.D. Zhu, R. Crozier, P. Wan, J. Feng, R. D. Ward.(2012). A fuzzy-set-theory-based approach to analyse species membership in DNA barcoding. Molecular Ecology, 21(8):1848-63.
+https://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2011.05235.x
 
 Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership using DNA sequences with Back-propagation Neural Networks. Systematic Biology, 57(2):202-215.
+https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12682
 }
-\keyword{barcoding.spe.identify.}
-
+\author{
+Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
+        zhangab2008(at)mail.cnu.edu.cn
+}
+\keyword{BSI}

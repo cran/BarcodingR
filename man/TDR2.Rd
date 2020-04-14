@@ -37,13 +37,12 @@ que<-TibetanMoth[grep("Agrotis_justa", Spp, value = FALSE,fixed = TRUE),]
 que2<-oneSpe[1:2,]
 out<-TDR2(oneSpe,que, boot=10,boot2=10) ### true false identification
 }
-\author{
-Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
-}
 \references{
 Jin Q, L,J.He, A.B. Zhang* (2012). A Simple 2D Non-Parametric Resampling Statistical Approach to 
 Assess Confidence in Species Identification in DNA Barcoding-An Alternative to Likelihood and Bayesian Approaches.
 PLoS ONE 7(12): e50831. doi:10.1371/ journal. pone. 0050831. http://dx.plos.org/ 10.1371/ journal. pone. 0050831.
 }
+\author{
+Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
+}
 \keyword{TDR2}
-

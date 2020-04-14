@@ -161,7 +161,7 @@ optimize.kmer<-function (ref,max.kmer=max.kmer){
     spe.morph<-as.character(Spp2)
     spe.Identified<-as.character(knn1)
     
-    spe.morph.Identified<-data.frame(spe.morph,spe.Identified)
+    spe.morph.Identified<-data.frame(spe.morph,spe.Identified,stringsAsFactors=TRUE)
     
     matches<-apply(spe.morph.Identified,2,strings.equal,str2=spe.morph.Identified[,2])
     

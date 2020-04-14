@@ -15,7 +15,7 @@ save.ids(outfile = "identified.txt", ids)
 no value returned,but an output file.
 }
 \description{
-Output identified results to an outfile.
+Output identified results to an outfile in temporty directory (found by tempdir() function).
 }
 \examples{
 
@@ -27,14 +27,13 @@ bsi<-barcoding.spe.identify(ref, que, method = "fuzzyId")
 bsi
 save.ids(outfile="identified.txt",bsi)
 }
-\author{
-Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
-}
 \references{
 zhangab2008(at)mail.cnu.edu.cn
 }
 \seealso{
 barcoding.spe.identify()
 }
+\author{
+Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
+}
 \keyword{save.ids}
-

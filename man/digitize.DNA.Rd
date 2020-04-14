@@ -23,11 +23,10 @@ digitized.DNA
 
 
 }
-\author{
-Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
-}
 \references{
 zhangab2008(at)mail.cnu.edu.cn
 }
+\author{
+Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
+}
 \keyword{digitize.DNA}
-

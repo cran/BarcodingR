@@ -16,13 +16,18 @@
 #'   
 #' @references 
 #' 
-#' Zhang, A.B, Hao, M.D., Yang,C.Q., Shi, Z.Y. (2016). BarcodingR: an integrated R package for species identification using DNA barcodes. Methods in Ecology and Evolution. In press.
+#' Zhang, A. B., M. D. Hao, C. Q. Yang, and Z. Y. Shi. (2017). BarcodingR: an integrated R package for species identification using DNA barcodes. Methods Ecol Evol. 8(5):627-634.
+#' https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12682.
 #' 
-#' Jin,Q., H.L. Han, X.M. Hu, X.H. Li,C.D. Zhu,S. Y. W. Ho, R. D. Ward, A.B. Zhang . (2013).Quantifying Species Diversity with a DNA Barcoding-Based Method: Tibetan Moth Species (Noctuidae) on the Qinghai-Tibetan Plateau. PloS One 8: e644.
+#' Jin,Q., H.L. Han, X.M. Hu, X.H. Li,C.D. Zhu,S. Y. W. Ho, R. D. Ward, A.B. Zhang . (2013). Quantifying Species Diversity with a DNA Barcoding-Based Method: Tibetan Moth Species (Noctuidae) on the Qinghai-Tibetan Plateau. PloS One 8: e644.
+#' https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064428.
 #' 
 #' Zhang, A. B., C. Muster, H.B. Liang, C.D. Zhu, R. Crozier, P. Wan, J. Feng, R. D. Ward.(2012). A fuzzy-set-theory-based approach to analyse species membership in DNA barcoding. Molecular Ecology, 21(8):1848-63.
+#' https://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2011.05235.x
 #' 
-#' Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership using DNA sequences with Back-propagation Neural Networks. Systematic Biology, 57(2):202-215. 
+#' Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership using DNA sequences with Back-propagation Neural Networks. Systematic Biology, 57(2):202-215.
+#' https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12682
+
 #' @examples
 #' 
 #' data(pineMothITS2) 
@@ -401,7 +406,7 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
     # dim(codes)
     
     
-    theta12.all<-data.frame(list.spe=list.spe,PS=pairs[,1],NN=pairs[,2])
+    theta12.all<-data.frame(list.spe=list.spe,PS=pairs[,1],NN=pairs[,2],stringsAsFactors=TRUE)
     
     #source("eucl.dist.two.vect.R")
     theta2.tmp<-numeric(dim(pairs)[1])
@@ -565,7 +570,7 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
     spe.morph<-as.character(Spp2)
     spe.Identified<-as.character(knn1)
     
-    spe.morph.Identified<-data.frame(spe.morph,spe.Identified)
+    spe.morph.Identified<-data.frame(spe.morph,spe.Identified,stringsAsFactors=TRUE)
     
     matches<-apply(spe.morph.Identified,2,strings.equal,str2=spe.morph.Identified[,2])
     
@@ -644,7 +649,7 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
   
     output.identified<-data.frame(queIDs=que.IDs,
                                   spe.Identified=spe.Identified.que,
-                                  FMF=FMF.que)
+                                  FMF=FMF.que,stringsAsFactors=TRUE)
     out<-list(model.success=success.rates.ref,output_identified=output.identified)
     
     
@@ -796,7 +801,7 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
         spe.morph<-as.character(Spp2)
         spe.Identified<-as.character(knn1)
         
-        spe.morph.Identified<-data.frame(spe.morph,spe.Identified)
+        spe.morph.Identified<-data.frame(spe.morph,spe.Identified,stringsAsFactors=TRUE)
         
         matches<-apply(spe.morph.Identified,2,strings.equal,str2=spe.morph.Identified[,2])
         
@@ -941,7 +946,7 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
     
     output.identified<-data.frame(queIDs=que.IDs,
                                   spe.Identified=spe.Identified.que,
-                                  FMF=FMF.que)
+                                  FMF=FMF.que,stringsAsFactors=TRUE)
     out<-list(model.success=success.rates.ref,output_identified=output.identified)
     #return(output.identified) 
    

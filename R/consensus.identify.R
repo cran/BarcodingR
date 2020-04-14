@@ -58,7 +58,7 @@ consensus.identify<-function (identifiedBy2orMore){
   ccs2<-apply(identifiedBy2orMore,MARGIN=1,FUN=concensus2)
   
   #ccs<-data.frame(queIDs=rownames(identifiedBy2orMore),concensus.id=ccs,votes=ccs2)
-  ccs<-data.frame(concensus.id=ccs,votes=ccs2)
+  ccs<-data.frame(concensus.id=ccs,votes=ccs2,stringsAsFactors=TRUE)
   
 
   return(ccs)

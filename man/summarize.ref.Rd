@@ -7,9 +7,10 @@
 summarize.ref(ref, taxonStat = TRUE, seqStat = TRUE, barcodeStat = TRUE)
 }
 \arguments{
-\item{ref}{object of class "DNAbin" used as a reference dataset, which contains taxon information}
+\item{ref}{object of class "DNAbin" used as a reference dataset, which contains taxon information, or just an array
+containing taxon information only.}
 
-\item{taxonStat}{logic value to indicate whether the item is calculated}
+\item{taxonStat}{logic value to indicate whether the item is calculated only when ref is an object of class "DNAbin".}
 
 \item{seqStat}{logic value to indicate whether the item is calculated}
 
@@ -23,16 +24,15 @@ Summarize taxon information, sequence statistics,barcodes numbers per species fo
 }
 \examples{
 
-data(TibetanMoth) 
+data(TibetanMoth)
 s.r<-summarize.ref(TibetanMoth,taxonStat=TRUE,seqStat=TRUE,barcodeStat=TRUE)
 s.r
-}
-\author{
-Ai-bing ZHANG, Meng-di HAO, CNU, Beijing, CHINA.
 }
 \references{
 zhangab2008(at)mail.cnu.edu.cn./zhangab2008(at)gmail.com.
 }
+\author{
+Ai-bing ZHANG, Meng-di HAO, CNU, Beijing, CHINA.
+}
 \keyword{ref}
 \keyword{summarize}
-

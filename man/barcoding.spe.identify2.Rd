@@ -35,17 +35,20 @@ spe.id<-barcoding.spe.identify2(ref,que, kmer = 1, optimization = FALSE)
 spe.id
  
 }
+\references{
+Zhang, A. B., M. D. Hao, C. Q. Yang, and Z. Y. Shi. (2017). BarcodingR: an integrated R package for species identification using DNA barcodes. Methods Ecol Evol. 8(5):627-634.
+https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12682.
+
+Jin,Q., H.L. Han, X.M. Hu, X.H. Li,C.D. Zhu,S. Y. W. Ho, R. D. Ward, A.B. Zhang . (2013). Quantifying Species Diversity with a DNA Barcoding-Based Method: Tibetan Moth Species (Noctuidae) on the Qinghai-Tibetan Plateau. PloS One 8: e644.
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064428.
+
+Zhang, A. B., C. Muster, H.B. Liang, C.D. Zhu, R. Crozier, P. Wan, J. Feng, R. D. Ward.(2012). A fuzzy-set-theory-based approach to analyse species membership in DNA barcoding. Molecular Ecology, 21(8):1848-63.
+https://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2011.05235.x
+
+Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership using DNA sequences with Back-propagation Neural Networks. Systematic Biology, 57(2):202-215.
+https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12682
+}
 \author{
 Ai-bing ZHANG, Cai-qing YANG, Meng-di HAO, CNU, Beijing, CHINA, contact at zhangab2008 (at) mail. cnu. edu. cn.
 }
-\references{
-Zhang, A.B, Hao, M.D., Yang,C.Q., Shi, Z.Y. (2016). BarcodingR: an integrated R package for species identification using DNA barcodes. Methods in Ecology and Evolution. In press.
-
-Jin,Q., H.L. Han, X.M. Hu, X.H. Li,C.D. Zhu,S. Y. W. Ho, R. D. Ward, A.B. Zhang . (2013).Quantifying Species Diversity with a DNA Barcoding-Based Method: Tibetan Moth Species (Noctuidae) on the Qinghai-Tibetan Plateau. PloS One 8: e644.
-
-Zhang, A. B., C. Muster, H.B. Liang, C.D. Zhu, R. Crozier, P. Wan, J. Feng, R. D. Ward.(2012). A fuzzy-set-theory-based approach to analyse species membership in DNA barcoding. Molecular Ecology, 21(8):1848-63.
-
-Zhang, A. B., D. S. Sikes, C. Muster, S. Q. Li. (2008). Inferring Species Membership using DNA sequences with Back-propagation Neural Networks. Systematic Biology, 57(2):202-215.
-}
 \keyword{barcoding.spe.identify2}
-

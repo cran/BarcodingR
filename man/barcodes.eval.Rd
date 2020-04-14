@@ -30,14 +30,13 @@ barcode2<-barcode1
 b.eval<-barcodes.eval(barcode1,barcode2,kmer1=1,kmer2=3)
 b.eval
 }
-\author{
-Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
-}
 \references{
 zhangab2008 (at) mail. cnu. edu. cn.
 }
 \seealso{
 prop.test()
 }
+\author{
+Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
+}
 \keyword{barcodes.eval}
-

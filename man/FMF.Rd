@@ -29,12 +29,11 @@ xtheta12<-c(0.6289163,0.1465522,0.6379375)
 FMF.out<-FMF(xtheta12)
 FMF.out
 }
-\author{
-Ai-bing ZHANG, Zhi-yong SHI. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
-}
 \references{
 Zhang, A. B., C. Muster, H.B. Liang, C.D. Zhu, R. Crozier, P. Wan, J. Feng, R. D. Ward.(2012). A fuzzy-set-theory-based approach 
 to analyse species membership in DNA barcoding. Molecular Ecology, 21(8):1848-63.
 }
+\author{
+Ai-bing ZHANG, Zhi-yong SHI. CNU, Beijing, CHINA, contact at zhangab2008(at)mail.cnu.edu.cn
+}
 \keyword{FMF}
-
