@@ -47,7 +47,7 @@ sample.ref<-function(ref,sample.porp=0.5,sample.level="full"){
   }
   taxonInfoExtraction<-function(seqLables,returnValue="id"){
     
-    if(class(seqLables)!="character")
+    if (!is.character(seqLables))
       stop("seqLables is not character!")
     
     id<-strsplit(seqLables, ",")[[1]][1]
@@ -82,7 +82,7 @@ sample.ref<-function(ref,sample.porp=0.5,sample.level="full"){
     if(returnValue=="species") return(species)
     
   }
-  if (class(ref)!="DNAbin")
+  if (!inherits(ref, "DNAbin"))
     stop("seqs should be in DNAbin format!")
   
   ### 1. basic statistics for taxon information

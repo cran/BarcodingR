@@ -269,7 +269,7 @@ barcoding.spe.identify<-function(ref, que, method = "bpNewTraining") {##"bpNewTr
     ###
     xtheta12<-as.numeric(xtheta12)
 
-    if (class(xtheta12)!="numeric" ||length(xtheta12)!=3)
+    if (length(xtheta12)!=3)
       stop("input should be a numeric vector with length of 3!!!")
 
     x<-xtheta12[1]
@@ -874,7 +874,7 @@ barcoding.spe.identify<-function(ref, que, method = "bpNewTraining") {##"bpNewTr
     que3<-que3[,-del]
 
 
-    head(ref3);class(ref3);dim(ref3)
+    #head(ref3);class(ref3);dim(ref3)
 
     rownames(ref3)<-1:dim(ref3)[1]
 

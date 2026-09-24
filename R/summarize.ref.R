@@ -38,7 +38,7 @@ summarize.ref<-function(ref,taxonStat=TRUE,seqStat=TRUE,barcodeStat=TRUE){
       return(SeqNames) }
   }
 
-  if (class(ref)!="DNAbin"&&class(ref)!="character")
+  if (!inherits(ref, "DNAbin") && !is.character(ref))
     stop("ref should be in DNAbin format! or an array containing sequences IDs!")
 
   ### 1. taxon statistics:
@@ -46,7 +46,7 @@ summarize.ref<-function(ref,taxonStat=TRUE,seqStat=TRUE,barcodeStat=TRUE){
 
 
     #sampleSpeNames<-attr(ref,"dimnames")[[1]]
-    if(class(ref)=="DNAbin"){
+    if (inherits(ref, "DNAbin")) {
     sampleSpeNames<-NAMES(ref)
     }else{
       sampleSpeNames<-ref
@@ -56,7 +56,7 @@ summarize.ref<-function(ref,taxonStat=TRUE,seqStat=TRUE,barcodeStat=TRUE){
 
     taxonInfoExtraction<-function(seqLables,returnValue="id"){
 
-      if(class(seqLables)!="character")
+      if (!is.character(seqLables))
         stop("seqLables is not character!")
 
       id<-strsplit(seqLables, ",")[[1]][1]
@@ -154,7 +154,7 @@ summarize.ref<-function(ref,taxonStat=TRUE,seqStat=TRUE,barcodeStat=TRUE){
     } ### the end of else
   }else{taxonStat<-NULL}
 
-  if (seqStat==TRUE&&class(ref)=="DNAbin"){
+  if (isTRUE(seqStat) && inherits(ref, "DNAbin")){
     no.seqs<-dim(ref)[1]
     length.seqs<-dim(ref)[2]
     ifelse(length(no.seqs)!=0,no.seqs<-no.seqs,no.seqs<-length(ref))
@@ -164,7 +164,7 @@ summarize.ref<-function(ref,taxonStat=TRUE,seqStat=TRUE,barcodeStat=TRUE){
     names(seqStat)<-c("no.seqs","length.seqs")
   }else{seqStat<-NULL}
 
-  if (barcodeStat==TRUE && class(ref)=="DNAbin"){
+  if (isTRUE(barcodeStat) && inherits(ref, "DNAbin")){
     #sampleSpeNames<-attr(ref,"dimnames")[[1]]
     sampleSpeNames<-NAMES(ref)
        mpattern<-".+,"

@@ -11,7 +11,6 @@
 #' @export 
 #' @import stats
 #' @import graphics
-#' @import utils 
 #' @import sp
 #' 
 #' @author Ai-bing ZHANG, PhD. CNU, Beijing, CHINA, contact at zhangab2008 (at) mail.cnu.edu.cn.

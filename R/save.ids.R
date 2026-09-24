@@ -4,8 +4,9 @@
 #' 
 #' @param  outfile character string to indicate outfile name.
 #' @param  ids object of class "BarcodingR", which contains identified taxon information. 
-#' 
+#' @importFrom utils write.table
 #' @return no value returned,but an output file.
+#' 
 #' @keywords save.ids
 #' @export 
 #' @author Ai-bing ZHANG, PhD. CNU, Beijing, CHINA.
@@ -22,7 +23,7 @@
 #' save.ids(outfile="identified.txt",bsi)
 
 save.ids<-function(outfile="identified.txt",ids){
-  if(class(ids)!="BarcodingR")
+  if(!inherits(ids, "BarcodingR"))
     stop("A BarcodingR object is required for ids!!!")
   
   #attributes(bsi)

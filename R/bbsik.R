@@ -53,10 +53,10 @@ bbsik<-function (ref, que, kmer = kmer, UseBuiltModel = FALSE,lr=5e-5, maxit=1e+
     
     #kmer<-1
     ### 1. check the format of input arguments 
-    if (class(ref)!="DNAbin")
+    if (!inherits(ref, "DNAbin"))
       stop("seqs should be in DNAbin format!")
     
-    if (class(kmer)!="integer")  kmer<-as.integer(kmer)
+    if (!is.integer(kmer))  kmer<-as.integer(kmer)  
     
     ### 2. seek unique.kmer.vector for all seqs: u.s
     seqs.as.char<-as.character(ref)
@@ -195,7 +195,7 @@ bbsik<-function (ref, que, kmer = kmer, UseBuiltModel = FALSE,lr=5e-5, maxit=1e+
   
   char2NumVector<-function(c){
     
-    if (class(c)!="character") c<-as.character(c)
+    if (!is.character(c)) c<-as.character(c)
     
     #stop("invalid input format! input should be character vector!")
     c<-as.factor(c)

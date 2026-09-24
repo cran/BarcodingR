@@ -17,7 +17,7 @@
 #' 
 char2NumVector<-function(c){
   
-  if (class(c)!="character") c<-as.character(c)
+  if (!is.character(c))  c<-as.character(c)
   
   #stop("invalid input format! input should be character vector!")
   c<-as.factor(c)

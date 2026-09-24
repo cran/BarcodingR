@@ -12,7 +12,7 @@
 #' @import class
 #' @import sp
 #' @author Ai-bing ZHANG, Cai-qing YANG, Meng-di HAO, CNU, Beijing, CHINA, contact at zhangab2008 (at) mail. cnu. edu. cn.
-#' @note read.dna() from package {ape} was used to obtain DNAbin object for unaligned non-coding barcodes. 
+#' @note \code{read.dna()} from package \pkg{ape} was used to obtain a DNAbin object for unaligned non-coding barcodes.
 #'   
 #' @references 
 #' 
@@ -83,10 +83,10 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
       
       #kmer<-1
       ### 1. check the format of input arguments 
-      if (class(ref)!="DNAbin")
+      if (!inherits(ref, "DNAbin"))
         stop("seqs should be in DNAbin format!")
       
-      if (class(kmer)!="integer")  kmer<-as.integer(kmer)
+      if (!is.integer(kmer))  kmer<-as.integer(kmer)
       
       ### 2. seek unique.kmer.vector for all seqs: u.s
       seqs.as.char<-as.character(ref)
@@ -230,7 +230,7 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
     ###  
     xtheta12<-as.numeric(xtheta12)
     
-    if (class(xtheta12)!="numeric" ||length(xtheta12)!=3) 
+    if (length(xtheta12)!=3) 
       stop("input should be a numeric vector with length of 3!!!")
     
     x<-xtheta12[1]
@@ -452,10 +452,10 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
     
     #kmer<-1
     ### 1. check the format of input arguments 
-    if (class(ref)!="DNAbin")
+    if (!inherits(ref, "DNAbin"))
       stop("seqs should be in DNAbin format!")
     
-    if (class(kmer)!="integer")  kmer<-as.integer(kmer)
+    if  (!is.integer(kmer))  kmer<-as.integer(kmer)
     
     ### 2. seek unique.kmer.vector for all seqs: u.s
     seqs.as.char<-as.character(ref)
@@ -698,10 +698,10 @@ barcoding.spe.identify2<-function (ref, que, kmer = kmer, optimization = TRUE) {
         
         #kmer<-1
         ### 1. check the format of input arguments 
-        if (class(ref)!="DNAbin")
+        if (!inherits(ref, "DNAbin"))
           stop("seqs should be in DNAbin format!")
         
-        if (class(kmer)!="integer")  kmer<-as.integer(kmer)
+        if  (!is.integer(kmer))  kmer<-as.integer(kmer)
         
         ### 2. seek unique.kmer.vector for all seqs: u.s
         seqs.as.char<-as.character(ref)

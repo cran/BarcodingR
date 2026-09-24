@@ -26,7 +26,7 @@ FMF<-function(xtheta12){
   ###  
   xtheta12<-as.numeric(xtheta12)
   
-  if (class(xtheta12)!="numeric" ||length(xtheta12)!=3) 
+  if (length(xtheta12)!=3) 
     stop("input should be a numeric vector with length of 3!!!")
   
   x<-xtheta12[1]

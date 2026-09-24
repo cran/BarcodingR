@@ -33,7 +33,7 @@
 TDR2<-function (oneSpe,que, boot,boot2){
   
   
-  if (class(oneSpe)!="DNAbin"||class(que)!="DNAbin") 
+  if (!inherits(oneSpe, "DNAbin") || !inherits(que, "DNAbin")) 
     stop("invalid sequence format! DNAbin format is required for DNA seqs!")
   
   if (dim(que)[2] != dim(oneSpe)[2]) 

@@ -24,7 +24,7 @@ a list indicating the identified species.
 Species identification based on fuzzy-set method (Zhang et al. 2012)and kmer.
 }
 \note{
-read.dna() from package {ape} was used to obtain DNAbin object for unaligned non-coding barcodes.
+\code{read.dna()} from package \pkg{ape} was used to obtain a DNAbin object for unaligned non-coding barcodes.
 }
 \examples{
 

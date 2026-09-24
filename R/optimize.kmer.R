@@ -58,10 +58,10 @@ optimize.kmer<-function (ref,max.kmer=max.kmer){
     
     #kmer<-1
     ### 1. check the format of input arguments 
-    if (class(ref)!="DNAbin")
+    if (!inherits(ref, "DNAbin"))
       stop("seqs should be in DNAbin format!")
     
-    if (class(kmer)!="integer")  kmer<-as.integer(kmer)
+    if (!is.integer(kmer))  kmer<-as.integer(kmer)
     
     ### 2. seek unique.kmer.vector for all seqs: u.s
     seqs.as.char<-as.character(ref)
